@@ -1,3 +1,121 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/*
+2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+
+/*
+Typographic tweaks!
+3. Add accessible line-height
+4. Improve text rendering
+*/
 body {
-    background-color: aqua;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+    font: inherit;
+}
+
+/*
+7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+8. Create a root stacking context
+*/
+#root, #__next {
+    isolation: isolate;
+}
+
+/*
+Start
+*/
+body {
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url('./resort-4471852_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+header nav button {
+    cursor: pointer;
+    color: white;
+    border: none;
+    background: none;
+}
+
+#content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#content .home {
+    background-color: rgba(0, 0, 0, 0.884);
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 25%;
+    font-size: 3rem;
+    color: white;
+}
+
+#content .home-para {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(184, 183, 183);
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.9rem;
+}
+
+#content .home-para > * {
+    display: inline;
+}
+
+#content svg {
+    display: inline;
 }

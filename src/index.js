@@ -1,3 +1,7 @@
 import './styles.css';
+import Home from './home.js';
 
-console.log("Initialized")
+
+const objHome = new Home(document.getElementById("content"));
+objHome.initializeDom();
+
