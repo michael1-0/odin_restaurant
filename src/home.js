@@ -1,5 +1,3 @@
-
-
 export default class Home {
     constructor(parentSelector) {
         this.parentSelector = parentSelector;
