@@ -1,1 +1,2 @@
 # odin_restaurant
+This is a project assignment for The Odin Project, where I practice my DOM manipulating skills, webpack bundling, and managing dependencies; there are 3 pages on this website, each coorelating to its wording. User will not be needing to reload the page while navigating the pages as it is all generated through javascript.
